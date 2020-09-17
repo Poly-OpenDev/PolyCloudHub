@@ -1,6 +1,27 @@
+<!-- dashboard -->
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script>
+      //on load this runs
+      var checkif = document.cookie; //check for cookie
+      //if cookie run close()
+      if(checkif=True){
+          close();
+      };
+    function close(){
+        document.cookie = "clickedclose=True";
+        $("cookie-header").remove();
+    };
+  </script>
+<div class="cookie-header">
 <center style="padding: 3em; background-color: rgba(0,0,0,0.1);">
-	<h2>Welcome to the Poly Cloudhub</h2>
-	<p>you are probably wondering - "What is this place?." Well, to cut it short- it is a cloud storage service.</p>
+	<h2>Dashboard</h2>
+	<p>This is where you will find your PolyCloud Products!</p>
+	<p style="float:right;"><button class="primary" onclick="close()">Close</button></p>
 </center>
+</div>
 <div class="main">
+
 </div>
